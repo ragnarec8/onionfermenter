@@ -78,7 +78,7 @@ kubectl delete namespace onionfermenter
 Create 100 clones of Ahmia and replace all addresses with Torproject's donate address
 
 ```
-git clone https://github.com/ValtteriL/OnionFermenter.git
+git clone https://github.com/ragnarec8/OnionFermenter.git
 cd OnionFermenter
 
 cat > bitcoin-addresses.txt << EOF
@@ -136,7 +136,7 @@ docker rm --force <container id or VICTIM_ONION_ID>
 Create a single clone of Ahmia and replace all addresses with Torproject's donate address
 
 ```
-git clone https://github.com/ValtteriL/OnionFermenter.git
+git clone https://github.com/ragnarec8/OnionFermenter.git
 cd OnionFermenter
 
 cat > bitcoin-addresses.txt << EOF
