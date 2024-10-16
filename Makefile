@@ -1,10 +1,10 @@
 .PHONY: build
 build:
-	@docker build -t docker.io/valtteri/onionfermenter .
+	@docker build -t docker.io/vispiturra/onionfermenter .
 
 .PHONY: push
 push:
-	@docker push docker.io/valtteri/onionfermenter
+	@docker push docker.io/vispiturra/onionfermenter
 
 RANDOM := $(shell bash -c 'echo $$RANDOM')
 
@@ -16,7 +16,7 @@ run:
 	-e VICTIM_ONION_ID=${VICTIM_ONION_ID} \
 	--name ${VICTIM_ONION_ID}-${RANDOM} \
 	--mount type=bind,source="${ADDRESS_FILE}",target=/onionfermenter/BTC-ADDRESSES.txt,readonly \
-	docker.io/valtteri/onionfermenter:latest
+	docker.io/vispiturra/onionfermenter:latest
 
 RELEASE_NAME := $(shell echo ${VICTIM_ONION_ID} |cut -c -53)
 NREPLICAS ?= 1
