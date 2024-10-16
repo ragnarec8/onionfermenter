@@ -15,7 +15,7 @@ RUN rebar3 as prod release
 
 FROM alpine:3.18
 
-LABEL maintainer="valtteri@shufflingbytes.com"
+LABEL maintainer="admin@gtaguide.xyz"
 
 RUN apk add --no-cache \
     bash \
